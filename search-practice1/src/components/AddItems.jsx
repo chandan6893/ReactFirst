@@ -12,15 +12,15 @@ export function AddItems() {
       //1. setItems([...items, data.trim()]);
 
       // 2
-      if (data !== ""){
-        setItems([...items,data.trim()])
+      let tdata = data.trim()
+      if (tdata === ""  ){
+        alert("there is some space");
+       
+      }else{
+         setItems([...items, tdata]);
       }
-
-
-
-
-        
-        //3 if(data === ""){
+      
+     //3 if(data === ""){
         //     console.log("first");
         //     return 
         // }else{
