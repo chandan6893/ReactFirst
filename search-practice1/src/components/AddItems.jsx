@@ -9,11 +9,18 @@ export function AddItems() {
         e.preventDefault();
         // console.log(data)
 
-      setItems([...items, data.trim()]);
+      //1. setItems([...items, data.trim()]);
+
+      // 2
+      if (data !== ""){
+        setItems([...items,data.trim()])
+      }
+
+
 
 
         
-        // if(data === ""){
+        //3 if(data === ""){
         //     console.log("first");
         //     return 
         // }else{
