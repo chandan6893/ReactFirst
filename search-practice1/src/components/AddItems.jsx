@@ -20,12 +20,12 @@ export function AddItems() {
          setItems([...items, tdata]);
       }
       
-     //3 if(data === ""){
-        //     console.log("first");
-        //     return 
-        // }else{
-        //      setItems([...items, data.trim()]);
-        // }
+     3 if(data === ""){
+            console.log("first");
+            return 
+        }else{
+             setItems([...items, data.trim()]);
+        }
         
         
         setData("")
