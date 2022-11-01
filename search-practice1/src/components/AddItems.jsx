@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 export function AddItems() {
    
-    const [data,setData] = useState("")
+    const [data,setData] = useState("");
      const [items,setItems] = useState([]);
 
     const onSubmit = (e) =>{

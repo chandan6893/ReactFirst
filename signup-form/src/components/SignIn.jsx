@@ -11,7 +11,7 @@ export function SignIn() {
 
   const handleSubmit = (e) =>{
     e.preventDefault();
-    console.log(id,password)
+    // console.log(id,password)
     if(id && password){
       setIdPwd({...idPwd,id,password});
     }
