@@ -1,33 +1,27 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
+// https://codesandbox.io/s/timer-practiece-gx3ux
 
 export function Swatch() {
-    const [microSec,setMicroSec] = useState(0);
-    const [sec,setSec] = useState(0);
-    const [mint,setMint]= useState(0);
-    const [hr,setHr] = useState();
+   const [count,setCount] = useState(0);
+   const [time,setTime] = useState(count)
 
     useEffect(()=>{
-        setMicroSec((prev)=>prev + 1);
-        setSec((prev)=>prev + 1);
-        setMint((prev)=>prev + 1);
-        setHr((prev)=>prev + 1);
+     setCount(()=>{
+      setTime((prev)=>prev + 1)
+     })  
+
+   
+    
     },[])
 
-
-    const handleStart = () =>{
-
-    }
-
-    
-  return (
+return (
     <>
       <h1>
-        {mint}: {sec}: {microSec}
+        COUNT : {time}
       </h1>
-      <button onClick={handleStart} >Start</button>
-      <button>Reset</button>
+  
     </>
   );
 }

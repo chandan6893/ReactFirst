@@ -1,5 +1,5 @@
-import React from 'react'
-import { useState,useRef } from 'react'
+import React from 'react';
+import { useState,useRef } from 'react';
 
 export function SearchBar() {
     const [items, setItems] = useState([""]);
@@ -10,7 +10,7 @@ export function SearchBar() {
     const onSubmit = (e) =>{
         e.preventDefault();
         const value = inputRef.current.value;
-        console.log(value);
+        // console.log(value);
         // if(value === "")
         inputRef.current.value = "";
         return setItems((prev)=>{

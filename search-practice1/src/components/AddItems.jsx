@@ -33,7 +33,7 @@ export function AddItems() {
         
         
     }
-    console.log(items)
+    // console.log(items)
   return (
     <>
      <form onSubmit={onSubmit}>
