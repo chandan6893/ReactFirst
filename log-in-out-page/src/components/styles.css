@@ -1,0 +1,56 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+.loginPage {
+  margin-bottom: 0.7rem;
+  padding: 0.6rem;
+  width: 19rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1rem;
+  color: black;
+  background-color: lightyellow;
+  border: 0.1rem deepskyblue solid;
+  border-radius: 0.4rem;
+}
+.login {
+  width: 7rem;
+  height: 2rem;
+  border: none;
+  background-color: deepskyblue;
+  border-radius: 0.4rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: larger;
+  color: wheat;
+  /* padding: 1rem; */
+}
+
+.welcomePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* color: darkred; */
+  align-items: center;
+  margin: 11% 35%;
+  background-color: lightblue;
+  border: 0.2rem darkslateblue solid;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 20rem;
+  height: 12rem;
+}
+.logout {
+  width: 7rem;
+  height: 2rem;
+  border: none;
+  background-color: deepskyblue;
+  border-radius: 0.4rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: larger;
+  color: wheat;
+}
