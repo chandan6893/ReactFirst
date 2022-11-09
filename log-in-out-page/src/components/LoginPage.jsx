@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 
 
-export function LoginPage({setLogin,setId,id}) {
-  
+export function LoginPage({ setLogin, setId, id }) {
+  //
+
   const [password, setPassword] = useState("");
   const [idPwd, setIdPwd] = useState({ id, password });
 
@@ -15,7 +16,7 @@ export function LoginPage({setLogin,setId,id}) {
 
     if (id === "" || password === "") {
       setLogin(false);
-    }else{
+    } else {
       setLogin(true);
     }
 
@@ -47,8 +48,6 @@ export function LoginPage({setLogin,setId,id}) {
           Login
         </button>
       </form>
-
-      {/* {<WelcomePage idAndPassword={setIdPwd} />} */}
     </>
   );
 }

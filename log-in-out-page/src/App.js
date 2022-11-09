@@ -10,9 +10,11 @@ const [id, setId] = useState("");
 
   return (
     <div className="App">
-      {logIn ? <WelcomePage   setLogin={setLogin} id={id} /> : <LoginPage  setLogin={setLogin} setId={setId} id={id} />}
+      {logIn ? <WelcomePage setLogin={setLogin} id={id} /> : <LoginPage setLogin={setLogin} setId={setId} id={id} />}
       {/* <LoginPage /> */}
       {/* <WelcomePage /> */}
+      {/* setLogin={setLogin} setId={setId} id={id} */}
+      {/* allprops={{ setLogin, setId, id }} */}
     </div>
   );
 }
