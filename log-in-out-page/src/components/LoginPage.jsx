@@ -20,9 +20,7 @@ export function LoginPage({ setLogin, setId, id }) {
       setLogin(true);
     }
 
-    // setLogin(true)
-    // setId("");
-    // setPassword("");
+   
   };
 
   return (
