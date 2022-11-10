@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 
 export function LoginPage({ setLogin, setId, id }) {
-  //
+  // const {}
 
   const [password, setPassword] = useState("");
   const [idPwd, setIdPwd] = useState({ id, password });
@@ -13,6 +13,8 @@ export function LoginPage({ setLogin, setId, id }) {
 
     setIdPwd({ ...idPwd, id, password });
     console.log(idPwd);
+
+    // lo
 
     if (id === "" || password === "") {
       setLogin(false);

@@ -36,13 +36,13 @@
   /* color: darkred; */
   align-items: center;
   margin: 11% 35%;
-  background-color: lightblue;
+  background-color: lightcyan;
   border: 0.2rem darkslateblue solid;
   border-radius: 0.4rem;
   padding: 1rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  width: 20rem;
-  height: 12rem;
+  width: 29rem;
+  height: 16rem;
 }
 .logout {
   width: 7rem;
