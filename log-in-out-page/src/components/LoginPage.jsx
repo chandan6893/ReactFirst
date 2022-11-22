@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 
 
 export function LoginPage({ setLogin, setId, id }) {
-  // const {}
+  
 
   const [password, setPassword] = useState("");
+  // console.log(password)
   const [idPwd, setIdPwd] = useState({ id, password });
 
   const handleSubmit = (e) => {
@@ -12,18 +13,30 @@ export function LoginPage({ setLogin, setId, id }) {
     // console.log(idPwd);
 
     setIdPwd({ ...idPwd, id, password });
-    console.log(idPwd);
+    // console.log(idPwd);
 
-    // lo
+    localStorage.setItem("user", JSON.stringify({ ...idPwd, id, password }));
+
+ 
+    
+    // JSON.parse(localStorage.getItem("user"));
+    
 
     if (id === "" || password === "") {
       setLogin(false);
     } else {
       setLogin(true);
     }
+    
+};
+useEffect(() => {
+  if (localStorage.getItem("user")) {
+    setLogin(true);
+  }
+});
 
-   
-  };
+
+
 
   return (
     <>
