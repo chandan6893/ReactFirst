@@ -1,8 +1,8 @@
 import React from 'react';
-import { useEffect } from 'react';
+
 
 export function WelcomePage({ setLogin, id }) {
-//   const [wcom, setWcom] = useState();
+
 
   const handleLogout = () => {
     
