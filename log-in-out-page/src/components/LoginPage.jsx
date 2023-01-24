@@ -31,7 +31,7 @@ export function LoginPage({ setLogin, setId, id }) {
 };
 useEffect(() => {
   if (localStorage.getItem("user")) {
-    setLogin(true);
+    setLogin(false);
   }
 });
 
